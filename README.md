@@ -1,5 +1,5 @@
 # Media Analyzer
-The purpose of this repository is to provide a communication channel between the authors and the users of VTCLab Media Analyzer app (https://analyzer.vtclab.com)
+The purpose of this repository is to provide a communication channel between the authors and the users of VTCLab Media Analyzer app (https://media-analyzer.pro)
 
 In particular:
 * To provide basic information about the application features and updates
