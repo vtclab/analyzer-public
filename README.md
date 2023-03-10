@@ -6,19 +6,20 @@ In particular:
 * To gather feedback from the users (questions, problems, etc.)
 * To discuss the ideas and upcoming changes
 
-Currently, analyzer is in the "Private Alpha" stage, but you can request early access, send us a message at analyzer@vtclab.com.
+Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you spot something weird. If you do though, please, send us a message at analyzer@vtclab.com or open an issue here in GitHub.
 
 ### Contents
  
-[Important notes](#important-notes)  
-[Basic features](#basic-features)   
-[Feedback](#feedback)    
-[Donate](#donate)  
-[Screenshots](#screenshots)
+[Screenshots](#screenshots)     
+[Basic features](#basic-features)    
+[Important notes](#important-notes)   
+[Feedback](#feedback)     
+[Donate](#donate)   
 
-## Important notes
-* The processing of the file is done locally in your browser. **No file content is sent to our servers**
-* We still send some telemetry to help us understand the problem if any
+## Screenshots
+
+<a href="https://user-images.githubusercontent.com/87360808/212826742-b8f7306e-fe32-4e9d-8566-ec3e51f5602d.png"><img width="100" alt="Screenshot 1" src="https://user-images.githubusercontent.com/87360808/212826742-b8f7306e-fe32-4e9d-8566-ec3e51f5602d.png"></a>
+<a href="https://user-images.githubusercontent.com/87360808/212827399-aeb04aed-f8c8-4894-997b-a33fdb653085.png"><img width="100" alt="Screenshot 2" src="https://user-images.githubusercontent.com/87360808/212827399-aeb04aed-f8c8-4894-997b-a33fdb653085.png"></a>
 
 ## Basic features
 
@@ -45,6 +46,10 @@ Currently, analyzer is in the "Private Alpha" stage, but you can request early a
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
 
+## Important notes
+* The processing of the file is done locally in your browser. **No file content is sent to our servers**
+* We still send some telemetry to help us understand the problem. Open browser's console to check the messages sent to our server.
+
 ## Feedback
 Feel free to ask questions and share your thoughts about the app using GitHub issues. If you don't want others to see your message, contact us at analyzer@vtclab.com.
 
@@ -55,8 +60,3 @@ Feel free to ask questions and share your thoughts about the app using GitHub is
 * Ethereum (ETH) Address: 0x4A706ebcEdA0627A091e3CFa080C555e8561a288
 
 * Patreon: https://www.patreon.com/vtclab_analyzer
-
-## Screenshots
-
-<img width="1434" alt="Screenshot 1" src="https://user-images.githubusercontent.com/87360808/212826742-b8f7306e-fe32-4e9d-8566-ec3e51f5602d.png">
-<img width="1435" alt="Screenshot 2" src="https://user-images.githubusercontent.com/87360808/212827399-aeb04aed-f8c8-4894-997b-a33fdb653085.png">
