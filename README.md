@@ -15,6 +15,7 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 [Important notes](#important-notes)   
 [Feedback](#feedback)     
 [Donate](#donate)   
+[Version history](#version-history)
 
 ## Screenshots
 
@@ -60,3 +61,6 @@ Feel free to ask questions and share your thoughts about the app using GitHub is
 * Ethereum (ETH) Address: 0x4A706ebcEdA0627A091e3CFa080C555e8561a288
 
 * Patreon: https://www.patreon.com/vtclab_analyzer
+
+## Version History
+Quick summary about the changes between the versions is available [here](HISTORY.md)
