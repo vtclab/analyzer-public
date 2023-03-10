@@ -26,29 +26,29 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 
 |Containers supported|Comments|
 | --- | --- |
-| MPEG-TS | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors |
-| ISOFF / MP4 / MOV / QuickTime| Parsing of atom/box structure, display the contents of some known atoms/boxes. No parsing for 'mdat' yet. |
+| MPEG-TS | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors, many DVB descriptors & PSI tables |
+| ISOFF / MP4 / MOV / QuickTime| Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of AAC/AVC/HEVC/VVC streams |
 | Elementary | Most of the audio/video streams listed below are also supported as elementary streams |
 | | |
 | **Audio streams supported** |  |
 | MPEG-1 Audio (ISO/IEC 11172-3)| Frame headers |
 | MPEG-2 Audio (ISO/IEC 13818-3)| Frame headers |
-| AAC Audio (ISO/IEC 13818-7, 14496-3), ADTS syntax| Frame headers |
+| AAC Audio (ISO/IEC 13818-7, 14496-3)| Frame headers |
 | Dolby AC-3, E-AC-3 (ATSC A/52)| Frame headers |
 | SMPTE-302M Audio | Frame headers |
 | | |
 | **Video streams supported** | |
 | MPEG-1 Video (ISO/IEC 11172-2) | All headers except slice data and below |
 | MPEG-2 Video (ISO/IEC 13818-2) | All headers except slice data and below |
-| H.264/AVC Video | Location and types of NAL units, without much details |
-| H.265/HEVC Video | Location and types of NAL units, without much details |
-| H.266/VVC Video | Location and types of NAL units, without much details |
+| H.264/AVC Video | Location and types of NAL units, detailed description of basic NAL units|
+| H.265/HEVC Video | Location and types of NAL units, detailed description of basic NAL units |
+| H.266/VVC Video | Location and types of NAL units, detailed description of VPS/SPS/PPS headers |
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
 
 ## Important notes
-* The processing of the file is done locally in your browser. **No file content is sent to our servers**
+* The processing of the file is done locally in your browser, using WebAssembly code. **No file content is sent to our servers**
 * We still send some telemetry to help us understand the problem. Open browser's console to check the messages sent to our server.
 
 ## Feedback
