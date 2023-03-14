@@ -26,8 +26,8 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 
 |Containers supported|Comments|
 | --- | --- |
-| MPEG-TS | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors, many DVB descriptors & PSI tables |
-| ISOFF / MP4 / MOV / QuickTime| Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of AAC/AVC/HEVC/VVC streams |
+| [MPEG-TS](/DETAILS.md#mpeg-ts) | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors, many DVB descriptors & PSI tables |
+| [ISOFF / MP4 / MOV / QuickTime](DETAILS.md#mp4mov) | Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of AAC/AVC/HEVC/VVC streams |
 | Elementary | Most of the audio/video streams listed below are also supported as elementary streams |
 | | |
 | **Audio streams supported** |  |
