@@ -1,13 +1,13 @@
 # Support for various frames
 
 ## Support levels
-| Designation | Mean |
+| Level | Meaning |
 | --- | --- |
 | 1 | Not supported |
 | 2 | Only some properties are supported |
-| 3 | All properties are supported without decrypting the values |
-| 4 | All properties with description of some values are supported |
-| 5 | All properties with description of all values are supported |
+| 3 | All properties are supported, without describing the values |
+| 4 | All properties are supported, with description of some values |
+| 5 | All properties are supported, with description of all values |
 
 ## MPEG-TS
 |  | 1 | 2 | 3 | 4 | 5 |
@@ -16,16 +16,12 @@
 | adaptation_field |  |  |  | &#10004; |  |
 | adaptation_field_extension |  |  |  | &#10004; |  |
 | af_descriptor | &#10004; |  |  |  |  |
-
-| PSI Tables (MPEG) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| **PSI Tables (MPEG)** |  |  |  |  |  |
 | Program Association Table |  |  |  |  | &#10004; |
 | Conditional Access Table |  |  |  |  | &#10004; |
 | Program Map Table |  |  |  |  | &#10004; |
-| TS Desctiption Table |  |  |  |  | &#10004; |
-
-| PSI Tables (DVB) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| TS Description Table |  |  |  |  | &#10004; |
+| **PSI Tables (DVB)** |  |  |  |  |  |
 | Network Information Table |  |  |  |  | &#10004; |
 | Service Description Table |  |  | &#10004; |  |  |
 | Bouquet Association Table |  |  |  |  | &#10004; |
@@ -37,9 +33,7 @@
 | Application Information Table |  |  | &#10004; |  |  |
 | Discontinuity Information Table |  |  |  |  | &#10004; |
 | Selection Information Table |  |  | &#10004; |  |  |
-
-| Descriptors (MPEG) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| **Descriptors (MPEG)** |  |  |  |  |  |
 | video_stream_descriptor |  |  | &#10004; |  |  |
 | audio_stream_descriptor |  |  | &#10004; |  |  |
 | hierarchy_descriptor |  |  | &#10004; |  |  |
@@ -62,9 +56,7 @@
 | mpeg2_aac_audio_descriptor |  |  |  |  | &#10004; |
 | J2K video descriptor |  |  |  |  | &#10004; |
 | HEVC video descriptor |  |  |  |  | &#10004; |
-
-| Descriptors (DVB) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| **Descriptors (DVB)** |  |  |  |  |  |
 | network_name_descriptor |  |  |  |  | &#10004; |
 | service_list_descriptor |  |  | &#10004; |  |  |
 | stuffing_descriptor |  |  |  |  | &#10004; |
@@ -133,9 +125,7 @@
 | DTS-HD_descriptor | &#10004; |  |  |  |  |
 | TTML_subtitling_descriptor | &#10004; |  |  |  |  |
 | DTS-UHD_descriptor | &#10004; |  |  |  |  |
-
-| Descriptors (DVB, Multimedia Home Platform) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| **Descriptors (DVB, Multimedia Home Platform)** |  |  |  |  |  |
 | application_descriptor |  |  | &#10004; |  |  |
 | application_name_descriptor |  |  |  |  | &#10004; |
 | transport_protocol_descriptor | &#10004; |  |  |  |  |
@@ -156,9 +146,7 @@
 | provider_usage_descriptor | &#10004; |  |  |  |  |
 | graphics_constraints_descriptor | &#10004; |  |  |  |  |
 | private_data_specifier_descriptor | &#10004; |  |  |  |  |
-
-| Descriptors (ATSC) | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
+| **Descriptors (ATSC)** |  |  |  |  |  |
 | AC-3_audio_stream_descriptor |  |  |  | &#10004; |  |
 | E-AC-3_audio_descriptor |  |  |  | &#10004; |  |
 
