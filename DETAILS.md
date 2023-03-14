@@ -137,6 +137,7 @@
 | dvb_html_application_location_descriptor | &#10004; |  |  |  |  |
 | dvb_j_application_descriptor | &#10004; |  |  |  |  |
 | dvb_j_application_location_descriptor | &#10004; |  |  |  |  |
+| external_application_authorization_descriptor |  |  | &#10004; |  |  |
 | graphics_constraints_descriptor | &#10004; |  |  |  |  |
 | ip_signalling_descriptor | &#10004; |  |  |  |  |
 | plug-in_descriptor | &#10004; |  |  |  |  |
@@ -144,7 +145,6 @@
 | private_data_specifier_descriptor | &#10004; |  |  |  |  |
 | provider_export_descriptor | &#10004; |  |  |  |  |
 | provider_usage_descriptor | &#10004; |  |  |  |  |
-| sexternal_application_authorization_descriptor |  |  | &#10004; |  |  |
 | transport_protocol_descriptor | &#10004; |  |  |  |  |
 | **Descriptors (ATSC)** |  |  |  |  |  |
 | AC-3_audio_stream_descriptor |  |  |  | &#10004; |  |
