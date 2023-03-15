@@ -1,4 +1,4 @@
-# Support for various frames
+# Support details for various headers/elements
 
 ## Support levels
 | Level | Meaning |
@@ -10,7 +10,7 @@
 | 5 | All properties are supported, with description of all values |
 
 ## MPEG-TS
-| Element | 1 | 2 | 3 | 4 | 5 |
+| Element | [1](#support-levels) | [2](#support-levels) | [3](#support-levels) | [4](#support-levels) | [5](#support-levels) |
 | --- | --- | --- | --- | --- | --- |
 | TS Packet |  |  |  |  | &#10004; |
 | adaptation_field |  |  |  | &#10004; |  |
@@ -152,7 +152,7 @@
 
 ## MP4/MOV
 
-| Box / Atom type | 1 | 2 | 3 | 4 | 5 |
+| Box / Atom type | [1](#support-levels) | [2](#support-levels) | [3](#support-levels) | [4](#support-levels) | [5](#support-levels) |
 | --- | --- | --- | --- | --- | --- |
 | "avcC" |  |  |  | &#10004; |  |
 | "chan" |  |  | &#10004; |  |  |
