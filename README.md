@@ -27,7 +27,7 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 |Containers supported|Comments|
 | --- | --- |
 | [MPEG-TS](/DETAILS.md#mpeg-ts) | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors, many DVB descriptors & PSI tables |
-| [ISOFF / MP4 / MOV / QuickTime](DETAILS.md#mp4mov) | Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of AAC/AVC/HEVC/VVC streams |
+| [ISOFF / MP4 / MOV / QuickTime](DETAILS.md#mp4mov) | Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of supported elementary streams |
 | Elementary | Most of the audio/video streams listed below are also supported as elementary streams |
 | | |
 | **Audio streams supported** |  |
@@ -43,6 +43,7 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 | H.264/AVC Video | Location and types of NAL units, detailed description of basic NAL units|
 | H.265/HEVC Video | Location and types of NAL units, detailed description of basic NAL units |
 | H.266/VVC Video | Location and types of NAL units, detailed description of VPS/SPS/PPS headers |
+| Apple ProRes | Frame and picture headers in MP4/MOV containers |
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
