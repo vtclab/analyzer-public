@@ -1,5 +1,16 @@
 # Version History
 
+## 2023-04-04, v0.2.1
+* MP4/MOV: Add support for ProRes, AC-3, E-AC-3 streams, raw video and audio chunks
+* MP4/MOV: Add support for DolbyVision boxes
+* MP4/MOV: Fix AAC Raw packet size displayed
+* MP4/MOV: Display timecode sample entry contents
+* HEVC: Add 'decoded_picture_hash' SEI
+* HEVC, VVC: Fix stream displayed name
+* More detailed error messages
+* Add 'details' page
+* Visual improvements
+
 ## 2023-03-10, v0.2.0, Public Beta
 * MP4/MOV 'mdat' parsing for AAC/AVC/HEVC/VVC streams
 * Advanced header parsing for AVC & HEVC, more details for VVC
