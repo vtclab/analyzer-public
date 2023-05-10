@@ -1,5 +1,16 @@
 # Version History
 
+## 2023-05-05 v0.2.2
+* Add packet list navigator ("Go to header index", "Go to file position" commands)
+* Improve packet list rendering for Firefox and Safari browsers
+* MP4/MOV: Add 'meta', 'ilst' boxes support
+* MP4/MOV: Fix DoviConfigurationBox ('dvcC') parsing 
+* MP4/MOV: Extend the list sample entry names
+* MP4/MOV: Support 'btrt' box
+* AC-3: Support headers with bsid < 8
+* Fix UUID visualization
+* Improve packet caching
+
 ## 2023-04-04, v0.2.1
 * MP4/MOV: Add support for ProRes, AC-3, E-AC-3 streams, raw video and audio chunks
 * MP4/MOV: Add support for DolbyVision boxes
