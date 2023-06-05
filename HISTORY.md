@@ -1,5 +1,17 @@
 # Version History
 
+## 2023-06-05 v0.2.3
+* Basic detection of RIFF (*.avi and *.wav), EBML (Matroska, WebM), MXF files
+* QT timecode tracks support
+* MVC-related boxes and NAL units
+* QuickTime: basic support for mebx (QT "Timed metadata") atoms
+* Scroll Jog control to be able to scroll the list with constant (adjustable) speed
+* Navigation Bar: Support negative values of file position and item indexes
+* SEI: Display x264, x265, ATEME info from SEI unregistered, recognize MDPM info presence
+* AVC: Fix scaling list parsing
+* RBSP: Fix incorrect data reading in some edge cases causing incorrect reading of some AVC/HEVC/VVC headers
+* HEVC: Fix short-term ref pics set parsing
+
 ## 2023-05-05 v0.2.2
 * Add packet list navigator ("Go to header index", "Go to file position" commands)
 * Improve packet list rendering for Firefox and Safari browsers
