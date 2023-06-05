@@ -6,6 +6,8 @@ In particular:
 * To gather feedback from the users (questions, problems, etc.)
 * To discuss the ideas and upcoming changes
 
+If you spot some issue which you are interested in, please vote for it with some emoji.
+
 Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you spot something weird. If you do though, please, send us a message at analyzer@vtclab.com or open an issue here in GitHub.
 
 ### Contents
