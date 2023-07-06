@@ -1,5 +1,17 @@
 # Version History
 
+## 2023-07-06 v0.2.4
+* MP4: Support 'schm', 'sinf', 'schi', 'sgpd' 'sbgp', 'mehd', 'trex', 'sidx', 'mfhd', 'tfhd', 'tfdt', trun', 'mdcv', 'clli', 'cclv' boxes
+* TS: Add new PMT stream_types and descriptors from ISO/IEC 13818-1:2022
+* TS/MP4/AVC/HEVC/VVC: Add enum names for AspectRatio, ChromaFormat, ColourPrimaries, TransferCharacteristics, MatrixCoefficients and HDR_WCG_idc fields, human-friendly descriptions for luminance- and color-related fields
+* TS: Add DOVI_video_stream_descriptor support
+* TS: Recognise SCTE-35 streams, add 'cue_identifier_descriptor' support
+* VVC: Add support for several SEI messages, list names for others
+* VVC: APS header support, picture_header_structure draft
+* HEVC: Add names for Dolby Vision "Unspecified 62" and "Unspecified 63" NAL units
+* SEI: Add Kvazaar, Elemental info from SEI Unregistered messages
+* RBSP reader for AVC/HEVC/VVC: Fix incorrect behavior in some corner cases
+
 ## 2023-06-05 v0.2.3
 * Basic detection of RIFF (*.avi and *.wav), EBML (Matroska, WebM), MXF files
 * QT timecode tracks support
