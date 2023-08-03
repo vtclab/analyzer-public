@@ -1,5 +1,20 @@
 # Version History
 
+## 2023-08-03 v0.2.5
+* TS: SCTE-35 streams support (commands only, no descriptors yet)
+* SEI: Add ATSC cc_data/bar_data/afd_data support in itu35 registered SEI
+* MP4: Support various flavours of XDCAM (MPEG-2) video
+* HEVC: time_code SEI support
+* TS: MHP AIT transport_protocol_descriptor support
+* Visualization: group long list of values into chunks of four items
+* MP4: support simple 'udta' boxes from 3GPP spec
+* MP4: Add 'av1C' (AV1CodecConfigurationBox), 'dOps' (OpusSpecificBox), 'dac4' (AC4SpecificBox) boxes support
+* MP4: basic recognition of compressed movie atoms ('cmov', 'dcom', 'cmvd')
+* Visualization: Print number of bytes in the utf8 string
+* TS: fix tag&length display for MHP AIT descriptors
+* MP4: fix hvcC flags display
+* Fix tables and arrays visualization
+
 ## 2023-07-06 v0.2.4
 * MP4: Support 'schm', 'sinf', 'schi', 'sgpd' 'sbgp', 'mehd', 'trex', 'sidx', 'mfhd', 'tfhd', 'tfdt', trun', 'mdcv', 'clli', 'cclv' boxes
 * TS: Add new PMT stream_types and descriptors from ISO/IEC 13818-1:2022
