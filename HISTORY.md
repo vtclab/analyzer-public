@@ -1,5 +1,14 @@
 # Version History
 
+## 2023-09-04 v0.2.6
+* Add support of Timed Text ('tx3g', 'text' sample entries) in MP4/MOV files
+* Add basic handling of  AC-4 streams ('ac4_syncframe' only) in MP4 & TS files
+* MPEG-TS: Support PSI tables & descriptors from ATSC A/65 standard, recognize all descriptors listed in DVB BlueBook A038r16
+* Add descriptions for 'cc_type' 'active_format', 'video_format' fields
+* Include PES packet type ('audio', 'video', private') to header name
+* Add basic detection of MPEG Program / System Streams
+* MP4/MOV: recognize more 'udta' boxes
+
 ## 2023-08-03 v0.2.5
 * TS: SCTE-35 streams support (commands only, no descriptors yet)
 * SEI: Add ATSC cc_data/bar_data/afd_data support in itu35 registered SEI
