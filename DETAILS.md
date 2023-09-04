@@ -63,7 +63,7 @@
 | adaptation_field_data_descriptor |  |  | &#10004; |  |  |
 | ancillary_data_descriptor |  |  | &#10004; |  |  |
 | announcement_support_descriptor |  | &#10004; |  |  |  |
-| application_signalling_descriptor | &#10004; |  |  |  |  |
+| application_signalling_descriptor |  |  |  &#10004; |  |  |
 | bouquet_name_descriptor |  |  |  |  | &#10004; |
 | CA_identifier_descriptor |  |  | &#10004; |  |  |
 | cable_delivery_system_descriptor |  |  | &#10004; |  |  |
