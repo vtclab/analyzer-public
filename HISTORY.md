@@ -8,6 +8,8 @@
 * Include PES packet type ('audio', 'video', private') to header name
 * Add basic detection of MPEG Program / System Streams
 * MP4/MOV: recognize more 'udta' boxes
+* Improve probe algorithm: better recognition of MP4, small TS files
+* Fix freezing in some cases of H.264 parsing
 
 ## 2023-08-03 v0.2.5
 * TS: SCTE-35 streams support (commands only, no descriptors yet)
