@@ -1,5 +1,23 @@
 # Version History
 
+## 2023-10-03 v0.3.0
+* Matroska (MKV), WebM files support
+* MP4: Add 'styp', 'saiz', 'saio', 'pssh', 'tenc','trep', 'dfLa', 'cslg', 'stps', 'sdtp' boxes support
+* MP4: Display track references info ('tref' box)
+* MP4: Display raw data chunks for some unsupported codecs
+* SEI: ST2094-10 data, film_grain_characteristics, alpha_channel_info support
+* SEI: Add support of AVCIntra data sei
+* Improve streams recognition
+* MP4: rework handling of NAL-based streams
+* MP4: Improve performance of raw streams extraction, when there are a lot of small samples
+* MP4: Display names for metadata items as numbered list
+* MP4: Fix Timecode reading
+* PES: Fix usage of tref_extension_flag
+* HEVC: Fix crash on invalid array read
+* RBSP: Fix corner case on reading
+* MP4: Fix 'File Info' binding
+* AVC: Fix mvc_vui_parameters_extension reading
+
 ## 2023-09-04 v0.2.6
 * Add support of Timed Text ('tx3g', 'text' sample entries) in MP4/MOV files
 * Add basic handling of  AC-4 streams ('ac4_syncframe' only) in MP4 & TS files
