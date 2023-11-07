@@ -1,5 +1,18 @@
 # Version History
 
+## 2023-11-07 v0.4.0
+* VP8, VP9, AV1 video streams parsing
+* New formats supported: AVI, WAV, FLV
+* Fragmented MP4 files support
+* Extend parsing of AC-4 streams
+* Display Dolby Vision RPU data headers
+* Improve streams recognition, parsing performance
+* Various fixes for problems discovered by fuzzy testing
+* MP4: support 'chnl', 'albm', 'yrrc', 'loci', 'hnti', 'hinf' boxes
+* More descriptions for AC-4, AC-4, MPEG 1/2 Video, AVC and HEVC elements
+* Visualization: if raw bytes looks like a text, display them as a text
+
+
 ## 2023-10-03 v0.3.0
 * Matroska (MKV), WebM files support
 * MP4: Add 'styp', 'saiz', 'saio', 'pssh', 'tenc','trep', 'dfLa', 'cslg', 'stps', 'sdtp' boxes support

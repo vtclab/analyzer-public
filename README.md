@@ -6,9 +6,9 @@ In particular:
 * To gather feedback from the users (questions, problems, etc.)
 * To discuss the ideas and upcoming changes
 
-If you spot some issue which you are interested in, please vote for it with some emoji.
+If you spot some issue which you are interested in, please vote for it with some emoji or comment.
 
-Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you spot something weird. If you do though, please, send us a message at analyzer@vtclab.com or open an issue here in GitHub.
+Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you spot something weird. If you do though, please, send us a message at analyzer@vtclab.com or open an issue here on GitHub.
 
 ### Contents
  
@@ -26,26 +26,13 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 
 ## Basic features
 
-|Containers supported|Comments|
+| **Supported** | |
 | --- | --- |
-| [MPEG-TS](/DETAILS.md#mpeg-ts) | Parsing of TS packets, PAT/PMT & several other tables, PES packets and elementary streams inside them (if corresponding encoding is supported, see below), some descriptors, many DVB descriptors & PSI tables |
-| [ISOFF / MP4 / MOV / QuickTime](DETAILS.md#mp4mov) | Parsing of atom/box structure, display the contents of many known atoms/boxes. Show access units of supported elementary streams |
-| Elementary | Most of the audio/video streams listed below are also supported as elementary streams |
-| | |
-| **Audio streams supported** |  |
-| MPEG-1 Audio (ISO/IEC 11172-3)| Frame headers |
-| MPEG-2 Audio (ISO/IEC 13818-3)| Frame headers |
-| AAC Audio (ISO/IEC 13818-7, 14496-3)| Frame headers |
-| Dolby AC-3, E-AC-3 (ATSC A/52)| Frame headers |
-| SMPTE-302M Audio | Frame headers |
-| | |
-| **Video streams supported** | |
-| MPEG-1 Video (ISO/IEC 11172-2) | All headers except slice data and below |
-| MPEG-2 Video (ISO/IEC 13818-2) | All headers except slice data and below |
-| H.264/AVC Video | Location and types of NAL units, detailed description of basic NAL units|
-| H.265/HEVC Video | Location and types of NAL units, detailed description of basic NAL units |
-| H.266/VVC Video | Location and types of NAL units, detailed description of VPS/SPS/PPS headers |
-| Apple ProRes | Frame and picture headers in MP4/MOV containers |
+| Containers | MPEG-TS, ISOFF / MP4 / 3GPP / MOV / QuickTime, MKV / WebM, RIFF / AVI / WAV, FLV, Elementary
+| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, Apple ProRes, Dolby Vision RPU
+Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, AAC, Dolby AC-3, E-AC-3, AC-4, SMPTE-302M Audio  |
+Subtitles | ISOBMFF Timed Text
+Metadata | ATSC Service Information, DVB Service Information, Closed Captions, AFD, Bar data, ST2094-10 data, AVC / HEVC / VVC SEI messages, SCTE-35 data
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
