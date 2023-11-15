@@ -1,5 +1,11 @@
 # Version History
 
+## 2023-11-15 v0.4.1
+* Support 'spatial video' files shot by iPhone 15 Pro
+* HEVC: parse 'three_dimensional_reference_displays_info' SEI, multilayer version of SPS, 'sps_multilayer_extension', 'pps_multilayer_extension' structures
+* MP4/MOV: Support 'lhvC' box
+* Visualization: show slice_type and layer_id (if not 0) in the header name for AVC/HEVC/VVC streams
+
 ## 2023-11-07 v0.4.0
 * VP8, VP9, AV1 video streams parsing
 * New formats supported: AVI, WAV, FLV
