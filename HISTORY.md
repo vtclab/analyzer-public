@@ -1,5 +1,20 @@
 # Version History
 
+## 2023-12-08 v0.4.2
+* Support LOAS/LATM AAC wrapping
+* Add FLAC audio support
+* AV1: support 'metadata_obu'
+* AAC: parse the beginning of AAC RAW packet
+* Display 'sei_message' types in the header name for AVC/HEVC/VVC streams
+* Recognize AnnexB streams stored in MP4 containers
+* Improve streams detection algorithm
+* More field descriptions for MPEG 1/2 Audio, AAC, AC-3 headers, MPEG-TS descriptors
+* MPEG-TS: Support DVB 'message_descriptor', "metadata_pointer_descriptor", 'TTML_subtitling_descriptor'
+* AVC: support 'frame_packing_assignment' SEI
+* If (only) the type of the stream is known, display it as "Unknown Video", "Unknown Audio", etc
+* MP4: Improve progress reporting for fragmented files
+* ProRes: Fix parsing of interlaced streams
+
 ## 2023-11-15 v0.4.1
 * Support 'spatial video' files shot by iPhone 15 Pro
 * HEVC: parse 'three_dimensional_reference_displays_info' SEI, multilayer version of SPS, 'sps_multilayer_extension', 'pps_multilayer_extension' structures
