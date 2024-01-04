@@ -1,5 +1,14 @@
 # Version History
 
+## 2024-01-05 v0.4.3
+* VVC: support Picture Header parsing, improved PPS parsing
+* MP4: update box names and sample entry names from ISO/IEC 14496-15
+* MP4: support 'sync' and 'tscl' group description entries
+* RIFF: add OpenDML AVI headers support
+* AVI/MKV: print extra data in BITMAPINFOHEADER (if any)
+* MPEG-TS: fix default_authority_descriptor parsing
+* RIFF: fix stream assignment
+
 ## 2023-12-08 v0.4.2
 * Support LOAS/LATM AAC wrapping
 * Add FLAC audio support
