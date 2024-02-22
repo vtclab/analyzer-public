@@ -1,5 +1,21 @@
 # Version History
 
+## 2024-02-2 v0.5.0
+* Major UI rework (dockable panels, command palette, hex view, context menus)
+* Search bytes/strings in the packet names or hex view
+* MP4: Add box names/structure from "Apple HEVC Stereo Video Format additions"
+* Print PES details (PTS/DTS/... presence) in the packet name
+* Print TS details (adaptation_field/payload_unit_start/PCR/OPCR/... presence, TS PID) in the packet name
+* Fix st2094_10 user data reading with ext_block_level == 2
+* MP4: Add "rtmd" box name/recognition
+* TS: Add S2_satellite_delivery_system_descriptor support
+* RIFF: names for OpenDML chunks
+* MKV: Fix reading of AVC/HEVC/VVC decoder configs
+* AVC: Improve dec_ref_pic_marking_repetition parsing
+* Extend number of known GUIDs in WAVE_FORMAT_EXTENSIBLE
+* Recognize more video formats from VIDEOINFOHEADER
+
+
 ## 2024-01-05 v0.4.3
 * VVC: support Picture Header parsing, improved PPS parsing
 * MP4: update box names and sample entry names from ISO/IEC 14496-15
