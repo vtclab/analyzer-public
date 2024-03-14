@@ -1,6 +1,13 @@
 # Version History
 
-## 2024-02-2 v0.5.0
+## 2024-03-14 v0.5.1
+* Add DVB subtitles support
+* Add SCTE-27 subtitles support
+* Add drop-down menus for main UI panels
+* mpegts: Fix first PSI section parsing if pointer_field is not zero
+* mpegts: Fix error reporting for PSI tables with no stuffing
+
+## 2024-02-22 v0.5.0
 * Major UI rework (dockable panels, command palette, hex view, context menus)
 * Search bytes/strings in the packet names or hex view
 * MP4: Add box names/structure from "Apple HEVC Stereo Video Format additions"
