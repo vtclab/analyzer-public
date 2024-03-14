@@ -21,8 +21,9 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 
 ## Screenshots
 
-<a href="https://user-images.githubusercontent.com/87360808/212826742-b8f7306e-fe32-4e9d-8566-ec3e51f5602d.png"><img width="100" alt="Screenshot 1" src="https://user-images.githubusercontent.com/87360808/212826742-b8f7306e-fe32-4e9d-8566-ec3e51f5602d.png"></a>
-<a href="https://user-images.githubusercontent.com/87360808/212827399-aeb04aed-f8c8-4894-997b-a33fdb653085.png"><img width="100" alt="Screenshot 2" src="https://user-images.githubusercontent.com/87360808/212827399-aeb04aed-f8c8-4894-997b-a33fdb653085.png"></a>
+<a href="https://github.com/vtclab/analyzer-public/assets/87360808/7b27c42d-8890-4747-88f6-a4d5bc1bb694"><img width="100" alt="Screenshot 1" src="https://github.com/vtclab/analyzer-public/assets/87360808/7b27c42d-8890-4747-88f6-a4d5bc1bb694"></a>
+<a href="https://github.com/vtclab/analyzer-public/assets/87360808/b16049ac-4d9a-42f5-bc5b-fa7268c3043c"><img width="100" alt="Screenshot 2" src="https://github.com/vtclab/analyzer-public/assets/87360808/b16049ac-4d9a-42f5-bc5b-fa7268c3043c"></a>
+<a href="https://github.com/vtclab/analyzer-public/assets/87360808/4d6bded9-37d9-41d3-8b4f-a5189ecdfa4b"><img width="100" alt="Screenshot 3" src="https://github.com/vtclab/analyzer-public/assets/87360808/4d6bded9-37d9-41d3-8b4f-a5189ecdfa4b"></a>
 
 ## Basic features
 
