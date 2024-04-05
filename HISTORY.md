@@ -1,5 +1,16 @@
 # Version History
 
+## 2024-04-05 v0.5.2
+* Add AVS2/AVS3 video support
+* AVI subtitles support
+* IVF format support
+* Recognize AV1 in elementary OBU files
+* Recognize VP8/VP9 video in MP4 containers
+* PES: extended_stream_id handling
+* MPEG-TS: DVB content_identifier_descriptor support
+* Add dark theme & theme switching
+* VP8: Fix width & height calculation
+
 ## 2024-03-14 v0.5.1
 * Add DVB subtitles support
 * Add SCTE-27 subtitles support
