@@ -29,11 +29,11 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 
 | **Supported** | |
 | --- | --- |
-| Containers | MPEG-TS, ISOFF / MP4 / 3GPP / MOV / QuickTime, MKV / WebM, RIFF / AVI / WAV, FLV, Elementary
-| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, Apple ProRes, Dolby Vision RPU
+| Containers | MPEG-TS, ISOFF / MP4 / 3GPP / MOV / QuickTime, MKV / WebM, RIFF / AVI / WAV, FLV, IVF, Elementary
+| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AVS2, AVS3, Apple ProRes, Dolby Vision RPU
 Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, AAC, Dolby AC-3, E-AC-3, AC-4, SMPTE-302M Audio  |
-Subtitles | ISOBMFF Timed Text, DVB Subtitles, SCTE-27 Subtitles
-Metadata | ATSC Service Information, DVB Service Information, Closed Captions, AFD, Bar data, ST2094-10 data, AVC / HEVC / VVC SEI messages, SCTE-35 data
+Subtitles | ISOBMFF Timed Text, CEA 608/708 Closed Captions, DVB Subtitles, SCTE-27 Subtitles, AVI Subtitles
+Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094-10 data, AVC / HEVC / VVC SEI messages, SCTE-35 data
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
