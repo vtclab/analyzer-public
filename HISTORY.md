@@ -1,5 +1,18 @@
 # Version History
 
+## 2024-05-08 v0.5.3
+* HDMV PGS subtitles support
+* Display TTML subtitle headers
+* Recognize Teletext stream
+* HEVC: sps_scc_extension, sps_3d_extension, sps_range_extension parsing
+* MP4/MOV: Apple's stereo boxes description based on https://blog.mikeswanson.com/spatial
+* SL-HDR SEI message support
+* MPEG-TS: Add carousel_identifier_descriptor, association_tag_descriptor, deferred_association_tags_descriptor, T2_delivery_system_descriptor, target_region_descriptor, target_region_name_descriptor, URI_linkage_descriptor, related_content_descriptor, dvb_j_application_descriptor, dvb_j_application_location_descriptor support
+* Display unknown PES data chunks
+* SEI: MDPM data description
+* MPEG-TS: Improve PSI sections detection
+* DVB Subtitles: Fix alternative CLUT reading
+
 ## 2024-04-05 v0.5.2
 * Add AVS2/AVS3 video support
 * AVI subtitles support
