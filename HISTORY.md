@@ -1,5 +1,12 @@
 # Version History
 
+## 2024-06-08 v0.5.4
+* Improve file type detection
+* MPEG-TS: Improve PSI tables detection
+* MP4/MOV: Add 'esds' box handling
+* AC4: fix sync checking
+* Small fixes for problems discovered by fuzzing
+
 ## 2024-05-08 v0.5.3
 * HDMV PGS subtitles support
 * Display TTML subtitle headers
