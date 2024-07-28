@@ -8,7 +8,7 @@ In particular:
 
 If you spot some issue which you are interested in, please vote for it with some emoji or comment.
 
-Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you spot something weird. If you do though, please, send us a message at analyzer@vtclab.com or open an issue here on GitHub.
+Feel free to contact us at analyzer@vtclab.com.
 
 ### Contents
  
@@ -31,9 +31,9 @@ Currently, analyzer is in the "Public Beta" stage, so don't be surprised if you 
 | --- | --- |
 | Containers | MPEG-TS, ISOFF / MP4 / 3GPP / MOV / QuickTime, MKV / WebM, RIFF / AVI / WAV, FLV, IVF, Elementary
 | Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AVS2, AVS3, Apple ProRes, Dolby Vision RPU
-Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, AAC, Dolby AC-3, E-AC-3, AC-4, SMPTE-302M Audio  |
+Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, MPEG-H Audio, AAC, Dolby AC-3, E-AC-3, AC-4, SMPTE-302M Audio  |
 Subtitles | ISOBMFF Timed Text, CEA 608/708 Closed Captions, DVB Subtitles, HDMV PGS Subtitles, SCTE-27 Subtitles, AVI Subtitles
-Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094-10 data, AVC / HEVC / VVC SEI messages, SCTE-35 data
+Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094 HDR metadata, AVC / HEVC / VVC SEI messages, SCTE-35 data, Dolby RPU
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
@@ -47,11 +47,7 @@ Feel free to ask questions and share your thoughts about the app using GitHub is
 
 ## Donate
 
-* Bitcoin (BTC) Address: bc1qwt63dmhuyztlzpj6egu9s3tw052nl02653ymsf
-
-* Ethereum (ETH) Address: 0x4A706ebcEdA0627A091e3CFa080C555e8561a288
-
-* Patreon: https://www.patreon.com/vtclab_analyzer
+* https://blog.media-analyzer.pro/donate/
 
 ## Version History
 Quick summary about the changes between the versions is available [here](HISTORY.md)

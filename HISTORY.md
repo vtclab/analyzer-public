@@ -1,5 +1,14 @@
 # Version History
 
+## 2024-07-28 v0.5.5
+* MPEG-H audio support
+* AVCHD LPCM audio support
+* Parse Dolby RPU data in AV1 streams
+* ST2094-40 metadata parsing
+* Chinese HDR dynamic metadata support (T/UWA 005.1-2022)
+* Recognize DJI 'meta' and 'dbgi' streams
+* Fix network files processing
+
 ## 2024-06-08 v0.5.4
 * Improve file type detection
 * MPEG-TS: Improve PSI tables detection
