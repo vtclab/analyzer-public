@@ -1,5 +1,16 @@
 # Version History
 
+## 2024-11-17 v0.5.6
+* MP4: Google's spatial media boxes (spatial audio + spherical video)
+* MP4: Support for some boxes common for HEIC files
+* MP4: 'elng', 'iods', 'prft' boxes support
+* MP4: ES_ID_Inc, ES_ID_Ref descriptors support
+* MP4: `seig` group description support
+* MP4: Read descriptors for several streams defined in ISO/IEC 14496-14 ("odsm", "crsm", "sdsm", "m7sm", "ocsm", "ipsm", "mjsm")
+* MPEG-TS: Parse the contents of IOD_descriptor
+* MPEG-1/2 audio: ID3 parsing support
+* AVC: Print video dimensions
+
 ## 2024-07-28 v0.5.5
 * MPEG-H audio support
 * AVCHD LPCM audio support
