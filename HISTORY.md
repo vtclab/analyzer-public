@@ -1,5 +1,8 @@
 # Version History
 
+## 2025-01-25 v0.5.7
+* FLAC: Verify the correctness of CRC across frame headers
+
 ## 2024-11-17 v0.5.6
 * MP4: Google's spatial media boxes (spatial audio + spherical video)
 * MP4: Support for some boxes common for HEIC files
