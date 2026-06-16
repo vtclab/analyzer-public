@@ -29,14 +29,16 @@ Feel free to contact us at analyzer@vtclab.com.
 
 | **Supported** | |
 | --- | --- |
-| Containers | MPEG-TS, ISOFF / MP4 / 3GPP / MOV / QuickTime, MKV / WebM, RIFF / AVI / WAV, FLV, IVF, Elementary
-| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AVS2, AVS3, Apple ProRes, Dolby Vision RPU
-Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, MPEG-H Audio, AAC, Dolby AC-3, E-AC-3, AC-4, SMPTE-302M Audio  |
-Subtitles | ISOBMFF Timed Text, CEA 608/708 Closed Captions, DVB Subtitles, HDMV PGS Subtitles, SCTE-27 Subtitles, AVI Subtitles
-Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094 HDR metadata, AVC / HEVC / VVC SEI messages, SCTE-35 data, Dolby RPU
+| Containers | MPEG-TS, MPEG-PS, ISOFF / MP4 / 3GPP / MOV / QuickTime, fragmented MP4 (DASH/CMAF), MKV / WebM, RIFF / AVI / WAV, FLV, MXF, OGG, IVF, JPEG/JFIF, VOB, Elementary
+| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AVS2, AVS3, Apple ProRes, Theora, LCEVC, Dolby Vision RPU
+Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, MPEG-H Audio, AAC, USAC/xHE-AAC, Dolby AC-3, E-AC-3, AC-4, Opus, Vorbis, SMPTE-302M Audio  |
+Subtitles | ISOBMFF Timed Text, CEA 608/708 Closed Captions, DVB Subtitles, HDMV PGS Subtitles, SCTE-27 Subtitles, AVI Subtitles, Teletext, DVD VOB Subtitles
+Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094 HDR metadata, AVC / HEVC / VVC SEI messages, SCTE-35 data, Dolby RPU, GoPro GPMF, DJI metadata, KLV, SMPTE 2038, SMPTE RDD-11, event messages (SCTE/ID3), ITU-T T.35
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
+| Open multi-segment streams | The **Advanced** tab of the Open File dialog accepts an init segment plus its media segments (DASH / HLS / CMAF, or a directory of MPEG-TS chunks) and analyzes them as a single session with lazy segment loading
+| Open from URL | The **URL** tab points the analyzer at a single remote file. Requires CORS and a `Content-Length` header on the server.
 
 ## Important notes
 * The processing of the file is done locally in your browser, using WebAssembly code. **No file content is sent to our servers**
