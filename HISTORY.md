@@ -1,5 +1,18 @@
 # Version History
 
+## 2026-06-16 v0.6.0
+* MXF: detection upgraded to full parsing (partitions, KLV essence, metadata)
+* MPEG Program Stream: detection upgraded to full parsing (pack header, system header, PSM)
+* New parsers: JPEG/JFIF, LCEVC, Theora, Opus, Vorbis, USAC/xHE-AAC, OGG, VOB
+* New metadata parsers: GoPro GPMF, DJI metadata, generic KLV, SMPTE 2038, SMPTE RDD-11, Teletext subtitles, DVD VOB subtitles, event messages (SCTE/ID3), ITU-T T.35 metadata
+* FLV: parse AVC Decoder Configuration Record (SPS/PPS), broader tag-type and script-data coverage
+* AC-3/E-AC-3: full mixing metadata, information metadata, extended mix data
+* AVS: distinguish AVS2 and AVS3
+* DASH/HLS/CMAF: analyze init + media segments as a single session with lazy segment loading
+* Open from URL: point the analyzer at a remote file (requires CORS and `Content-Length`)
+* Parser Selection: override automatic detection from the Advanced tab
+* New WebGL-accelerated YUV viewer with automatic format detection and component correlation analysis
+
 ## 2025-01-25 v0.5.7
 * FLAC: Verify the correctness of CRC across frame headers
 
