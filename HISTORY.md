@@ -1,5 +1,22 @@
 # Version History
 
+## 2026-08-15 v0.7.0
+* MCP server: free, `npx`-installable server (`@vtclab/analyzer-mcp`) that lets AI agents inspect media files — streams, packets, budgeted field access, raw bytes, and scan errors
+* New parsers: AV2, DTS Core / DTS-HD, AAC LATM (StreamMuxConfig / AudioSpecificConfig), DSM-CC object carousels (reassembly, decompression, BIOP)
+* MXF: decode header-metadata local sets via the primer pack
+* LCEVC: picture_config quantization matrix, dequantization, dithering, VUI
+* SMPTE 2038: content-based detection of VANC streams not announced in the PMT
+* SMPTE 302M: describe channel count and bit depth
+* MPEG-TS: detect M2TS/BDAV and FEC variants by packet stride; parse the M2TS/BDAV 4-byte ATS prefix as its own header
+* MPEG-TS: annotate elementary PID names with ISO 639 language and PCR flag; label undetectable PES streams by category
+* MPEG-TS: HDMV registration_descriptor, HbbTV simple AIT descriptors, MVC_operation_point_descriptor, named CA_system_ID values (CA and ARIB CA descriptors)
+* MP4: QuickTime 'tmcd' timecodes, OMAF 'rwpk'/'covi'/'srqr' boxes, sample-entry codec mapping, restricted-scheme tracks resolved via 'frma'
+* Scan errors: parse errors the scanner used to swallow silently are now collected and reported through the MCP server and the CLI
+* Surface unsupported payloads as raw bytes: unsupported AVC NAL unit types, SVC/3D-AVC slice-header extensions, Dolby Vision EL (HEVC NUT 63)
+* YUV viewer: support non-square pixels (custom pixel aspect ratio)
+* Scanner robustness: no more hangs or infinite loops on truncated and malformed files
+* Parser fixes across VVC, E-AC-3, Opus, MKV, AMV, MPEG-2 and MP4 language codes
+
 ## 2026-06-16 v0.6.0
 * MXF: detection upgraded to full parsing (partitions, KLV essence, metadata)
 * MPEG Program Stream: detection upgraded to full parsing (pack header, system header, PSM)

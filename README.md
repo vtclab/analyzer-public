@@ -29,19 +29,21 @@ Feel free to contact us at analyzer@vtclab.com.
 
 | **Supported** | |
 | --- | --- |
-| Containers | MPEG-TS, MPEG-PS, ISOFF / MP4 / 3GPP / MOV / QuickTime, fragmented MP4 (DASH/CMAF), MKV / WebM, RIFF / AVI / WAV, FLV, MXF, OGG, IVF, JPEG/JFIF, VOB, Elementary
-| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AVS2, AVS3, Apple ProRes, Theora, LCEVC, Dolby Vision RPU
-Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, MPEG-H Audio, AAC, USAC/xHE-AAC, Dolby AC-3, E-AC-3, AC-4, Opus, Vorbis, SMPTE-302M Audio  |
+| Containers | MPEG-TS, M2TS / BDAV, MPEG-PS, ISOFF / MP4 / 3GPP / MOV / QuickTime, fragmented MP4 (DASH/CMAF), MKV / WebM, RIFF / AVI / WAV, FLV, MXF, OGG, IVF, JPEG/JFIF, VOB, Elementary
+| Video Codecs | MPEG-1 Video, MPEG-2 Video, H.264/AVC, H.265/HEVC Video, H.266/VVC, VP8, VP9, AV1, AV2, AVS2, AVS3, Apple ProRes, Theora, LCEVC, Dolby Vision RPU
+Audio Codecs | MPEG-1 Audio, MPEG-2 Audio, MPEG-H Audio, AAC, AAC LATM/LOAS, USAC/xHE-AAC, Dolby AC-3, E-AC-3, AC-4, DTS Core, DTS-HD, Opus, Vorbis, SMPTE-302M Audio  |
 Subtitles | ISOBMFF Timed Text, CEA 608/708 Closed Captions, DVB Subtitles, HDMV PGS Subtitles, SCTE-27 Subtitles, AVI Subtitles, Teletext, DVD VOB Subtitles
-Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094 HDR metadata, AVC / HEVC / VVC SEI messages, SCTE-35 data, Dolby RPU, GoPro GPMF, DJI metadata, KLV, SMPTE 2038, SMPTE RDD-11, event messages (SCTE/ID3), ITU-T T.35
+Metadata | ATSC Service Information, DVB Service Information, AFD, Bar data, ST2094 HDR metadata, AVC / HEVC / VVC SEI messages, SCTE-35 data, Dolby RPU, GoPro GPMF, DJI metadata, KLV, MXF header metadata, SMPTE 2038, SMPTE RDD-11, DSM-CC object carousels, HbbTV AIT, QuickTime timecodes, OMAF boxes, event messages (SCTE/ID3), ITU-T T.35
 | | |
 | **Common abilities** | |
 | Packet filtering | Each stream has three-state mode selector: <ul><li>**Not selected** (✘) - headers from this stream won't be displayed in the list</li><li>**Selected, this stream only** (➔) - headers will be displayed, without contained streams</li><li>**Selected, with children** (✔) - headers from this stream and any contained stream will be displayed in the list</li></ul>
 | Open multi-segment streams | The **Advanced** tab of the Open File dialog accepts an init segment plus its media segments (DASH / HLS / CMAF, or a directory of MPEG-TS chunks) and analyzes them as a single session with lazy segment loading
 | Open from URL | The **URL** tab points the analyzer at a single remote file. Requires CORS and a `Content-Length` header on the server.
+| Use from an AI agent (MCP) | A free [MCP](https://modelcontextprotocol.io/) server exposes the analyzer to Claude Code, Claude Desktop, Cursor and other MCP-capable agents: `npx -y @vtclab/analyzer-mcp`. Agents can list streams and packets, read individual fields or raw bytes, and retrieve scan errors. See https://media-analyzer.pro/analyzer/mcp
 
 ## Important notes
 * The processing of the file is done locally in your browser, using WebAssembly code. **No file content is sent to our servers**
+* The MCP server likewise parses files locally on your own machine — **no file content leaves it**
 * We still send some telemetry to help us understand the problem. Open browser's console to check the messages sent to our server.
 
 ## Feedback
