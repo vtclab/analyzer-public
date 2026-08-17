@@ -51,7 +51,7 @@ Feel free to ask questions and share your thoughts about the app using GitHub is
 
 ## Donate
 
-* https://blog.media-analyzer.pro/donate/
+* https://media-analyzer.pro/donate
 
 ## Version History
 Quick summary about the changes between the versions is available [here](HISTORY.md)
