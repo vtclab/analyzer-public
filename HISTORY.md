@@ -1,5 +1,16 @@
 # Version History
 
+## 2026-10-04 v0.8.0
+* Captions panel: CEA-608 (CC1–CC4 and XDS) and CEA-708 as text, each command shown with its parameters
+* Faster on large files in the browser, roughly a fifth off the time
+* The analyzer detects more file formats
+* Better stream identification in transport streams
+* MCP server: added `list_caption_tracks` and `read_captions`
+* Fixed a bug that could change the site language during a visit
+* YUV viewer: raw YUV detection rebuilt from the file's structure
+* YUV viewer: YV12 is its own format, not folded into I420
+* YUV viewer: fixed flat green frames when a plane row is not a multiple of 4
+
 ## 2026-08-15 v0.7.0
 * MCP server: free, `npx`-installable server (`@vtclab/analyzer-mcp`) that lets AI agents inspect media files — streams, packets, budgeted field access, raw bytes, and scan errors
 * New parsers: AV2, DTS Core / DTS-HD, AAC LATM (StreamMuxConfig / AudioSpecificConfig), DSM-CC object carousels (reassembly, decompression, BIOP)
